@@ -7,6 +7,7 @@ import SessionDetails from "./Pages/SessionDetails";
 function App() {
   const router = createBrowserRouter([
     {
+      
       path: "/",
       element: <MiniDrawer />,
       // errorElement: <ErrorPage />,
@@ -14,7 +15,7 @@ function App() {
         {
           index:true,
           element: <SessionsList />,
-          path: "sessions",
+          // path: "sessions",
         },
         { element: <SessionDetails />, path: "new-session" },
         { element: <SessionDetails />, path: "view-session/:session_id" },
@@ -22,8 +23,8 @@ function App() {
         // { path: "products/:productId", element: <ProductDetailPage /> },
       ],
     },
-  ]);
-  return <RouterProvider router={router} />;
+  ],{basename:"/event-management"});
+  return <RouterProvider router={router}  />;
 }
 
 export default App;

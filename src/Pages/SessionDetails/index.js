@@ -123,7 +123,7 @@ function SessionDetails() {
 
   const onCloseSnackbar = () => {
     handleSnackbar();
-    navigate("/sessions");
+    navigate("/");
   };
 
   return (
@@ -132,7 +132,7 @@ function SessionDetails() {
         <div>
           <Button startIcon={<ChevronLeftIcon />} size="small">
             <Link
-              to="/sessions"
+              to="/"
               style={{
                 textDecoration: "none",
                 color: "#9A9A9A",
@@ -148,7 +148,7 @@ function SessionDetails() {
         <div>
           <Button sx={{ bgcolor: "#2E2E2E", borderRadius: 0, color: "white" }}>
             <Link
-              to="/sessions"
+              to="/"
               style={{
                 textDecoration: "none",
                 color: "white",
