@@ -20,7 +20,7 @@ function App() {
 
       ],
     },
-  ],{basename:"/event-management"});
+  ]);
   return <RouterProvider router={router}  />;
 }
 

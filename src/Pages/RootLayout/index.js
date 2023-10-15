@@ -135,9 +135,9 @@ export default function MiniDrawer() {
           text: "Sessions",
           icon: EllipseIcon,
           disable: false,
-          path: "sessions",
+          path: "",
         },
-        { id: 22, text: "Venues", icon: EllipseIcon, disable: true, path: "" },
+        { id: 22, text: "Venues", icon: EllipseIcon, disable: true, path: "venues" },
       ],
     },
     {
