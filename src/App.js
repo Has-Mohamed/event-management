@@ -6,21 +6,22 @@ import SessionDetails from "./Pages/SessionDetails";
 function App() {
   const router = createBrowserRouter([
     {
+      
       path: "/",
       element: <MiniDrawer />,
       children: [
         {
           index:true,
           element: <SessionsList />,
-          path: "sessions",
+          // path: "sessions",
         },
         { element: <SessionDetails />, path: "new-session" },
         { element: <SessionDetails />, path: "view-session/:session_id" },
 
       ],
     },
-  ]);
-  return <RouterProvider router={router} />;
+  ],{basename:"/event-management"});
+  return <RouterProvider router={router}  />;
 }
 
 export default App;
