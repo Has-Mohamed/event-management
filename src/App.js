@@ -8,7 +8,6 @@ function App() {
     {
       path: "/",
       element: <MiniDrawer />,
-      // errorElement: <ErrorPage />,
       children: [
         {
           index:true,
@@ -17,8 +16,7 @@ function App() {
         },
         { element: <SessionDetails />, path: "new-session" },
         { element: <SessionDetails />, path: "view-session/:session_id" },
-        // { path: "products", element: <ProductsPage /> },
-        // { path: "products/:productId", element: <ProductDetailPage /> },
+
       ],
     },
   ]);
