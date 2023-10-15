@@ -1,8 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MiniDrawer from "./Pages/RootLayout";
-import SessionsList, { loader as sessionsLoadder } from "./Pages/SessionsList";
+import SessionsList from "./Pages/SessionsList";
 import SessionDetails from "./Pages/SessionDetails";
 function App() {
   const router = createBrowserRouter([
